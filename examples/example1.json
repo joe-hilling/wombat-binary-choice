@@ -1,0 +1,32 @@
+{
+    "wombat_component" : "binary choice",
+    "language"      : "EN",
+    "repeats"        : 1,
+    "randomise" : true,
+    "timer_duration" : 10000,
+    "delay" : 200,
+    "response_1"         : { "name" : "like", "text" :  "The word fits the image well" },
+    "response_2"         : { "name" : "dislike", "text" :  "\u0928\u0947 \u6f22\u5b57 \u0928\u0947 \u6f22\u5b57 \u0928\u0947 \u6f22\u5b57 \u0928\u0947 \u6f22\u5b57 \u0928\u0947 \u6f22\u5b57" },
+    "fixed_words"    : false,
+    "stimuli" : [
+        {
+            "name" : "wombat1",
+            "path" : "https://manatee-resources.s3.amazonaws.com/wombat-default-stimuli/wombat1.jpg"        
+        },
+        {
+            "name" : "wombat2",
+            "path" : "https://manatee-resources.s3.amazonaws.com/wombat-default-stimuli/wombat2.jpg"
+        },
+        {
+            "name" : "wombat3",
+            "path" : "https://manatee-resources.s3.amazonaws.com/wombat-default-stimuli/wombat3.jpg"
+        }
+    ],
+    "language_options" : {
+        "title" : "Pick the funkiest wombat sadjklfndjkfnadj",
+        "pause_message" : "Take a break from the wombats.",
+        "pause_continue_button" : "more wombats!",
+        "select" : "press"
+    }
+
+}

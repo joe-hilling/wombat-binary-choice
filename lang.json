@@ -1,0 +1,19 @@
+{
+	"default" : {
+		"continue" : "NO TRANSLATION",
+		"title" : "NO TRANSLATION",
+		"pause_message" : "NO TRANSLATION",
+		"pause_continue_button" : "NO TRANSLATION",
+		"select" : "NO TRANSLATION",
+		"tap" : "NO TRANSLATION"
+	},
+
+	"en" : {
+		"continue" : "continue",
+		"title" : "Choose the brand that you feel is more ethical, least likely to fuck up the universe",
+		"pauseMessage" : "Test paused",
+		"pauseContinueButton" : "Continue",
+		"leftText" : "Select left",
+		"rightText" : "Select right"
+	}
+}

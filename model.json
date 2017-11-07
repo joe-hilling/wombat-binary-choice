@@ -1,0 +1,119 @@
+{
+	"name" : "binary choice",
+	"description" : "user chooses between two images",
+	"version" : "0",
+	"start" : "../../main.html",
+	"data" : {
+		"type" : "object",
+		"properties" : {
+			"index"         : { "type" : "integer" },
+			"stimuli_left"  : { "type" : "string" },
+			"stimuli_right" : { "type" : "string" },
+			"selected"      : { "enum" : ["left", "right"] },
+			"latency"       : { "type" : "float" }
+		}
+	},
+
+	"configuration" : {
+		"type" : "object",
+		"properties" : {
+			"wombat_component" : {
+				"enum" : ["binary choice"],
+				"default" : "binary choice",
+				"required" : true
+			},
+			"language" : {
+				"type" : "string",
+				"default" : "en"
+			},
+			"language_options" : {
+				"type" : "object"
+			},
+			"repeats" : {
+				"type" : "integer",
+				"default" : 1
+			},
+			"randomise" : {
+				"type" : "boolean",
+				"default" : true
+			},
+			"timer_duration" : {
+				"type" : "float",
+				"default" : 5000
+			},
+			"delay" : {
+				"type" : "float",
+				"default" : 1000
+			},
+			"response_1" : {
+				"type" : "object",
+				"properties" : {
+					"name" : { "type" : "string", "required" : true },
+					"text" : { "type" : "string" }
+				},
+				"required" : true
+			},
+			"response_2" : {
+				"type" : "object",
+				"properties" : {
+					"name" : { "type" : "string", "required" : true },
+					"text" : { "type" : "string" }
+				},
+				"required" : true
+			},
+			"fixed_words" : {
+				"type" : "boolean",
+				"default" : true,
+				"required" : true
+			},
+			"stimuli" : {
+				"type" : "array",
+				"items" : {
+					"type" : "object",
+					"properties" : {
+						"name" : { "type" : "string ", "required" : true },
+						"text" : { "type" : "string "},
+						"path" : { "type" : "string "}
+					}
+				}
+			}
+
+		}		
+
+	},
+
+	"default_configuration" : {
+		"language" : "default",
+		"repeats" : 1,
+		"timer_duration" : 5000,
+		"delay" : 1000,
+		"response_1" : {
+			"name" : "left",
+			"text" : "Select left"
+		},
+		"response_2" : {
+			"name" : "right",
+			"text" : "select right"
+		},
+		"fixed_words" : true,
+		"stimuli" : [
+			{
+				"name" : "wombat1",
+				"path" : "https://manatee-resources.s3.amazonaws.com/wombat-default-stimuli/wombat1.jpg"
+			},
+			{
+				"name" : "wombat2",
+				"path" : "https://manatee-resources.s3.amazonaws.com/wombat-default-stimuli/wombat2.jpg"
+			},
+			{
+				"name" : "wombat3",
+				"path" : "https://manatee-resources.s3.amazonaws.com/wombat-default-stimuli/wombat3.jpg"
+			}
+		],
+		"language_options" : {
+			"title" : "Pick the funkiest wombat"
+		}
+	}
+
+
+}
